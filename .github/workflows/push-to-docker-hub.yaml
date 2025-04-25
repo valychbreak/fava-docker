@@ -41,7 +41,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: yegle/fava
+          images: valychbreak/fava:1.29
           tags: |
             type=raw,value=latest,enabled={{is_default_branch}}
             type=ref,event=branch,enabled={{!is_default_branch}}
